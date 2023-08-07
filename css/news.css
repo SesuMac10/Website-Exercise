@@ -1,0 +1,316 @@
+*{box-sizing: border-box;}
+
+body {margin: 0px;}
+
+header {display: flex;}
+
+main {color: white;
+	  font-size: 20px;
+      margin: 0px 0px;}
+
+main p {text-align: center}
+
+footer a {text-decoration: none;
+          padding: 0px 20px 0px 20px;
+          color: white;}
+
+.logo img {width: 40%;
+           height: 80%;
+           padding-top: 15px;}
+
+
+h3 {font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 4.5%;
+    letter-spacing: 1.5px;
+    color: #ff4654;}
+
+h2 {font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    color: #ff4654;
+    text-align: center;}
+
+.container {background-color: #181a1a;
+            font-family: Arial, Helvetica, sans-serif;}
+
+
+.logo {background-color: #141616;
+       flex: 1;
+       display: flex;
+       justify-content: center}
+
+.navbar1 {font-family: "Bebas Neue", sans-serif;
+          font-size: 18px;
+          letter-spacing: 1.5px;
+          background-color: #141616;
+          flex: 4;
+          display: flex;
+          justify-content: center;
+          padding-top: 65px;}
+
+.navbar2 {font-family: "Bebas Neue", sans-serif;
+          font-size: 18px;
+          letter-spacing: 1.5px;    
+          background-color: #141616;
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          padding-top: 65px;}
+
+.content {display: flex;}
+
+.footer {background-color: #141616;
+         display: flex;
+         justify-content: center;
+         padding: 20px;}
+
+header img {width: 150px;}
+
+
+
+
+#mobile_menu {display: none;}
+
+#nav_menu a {text-decoration: none}
+
+#nav_menu ul {list-style: none;
+               position: relative;}
+
+#nav_menu ul li {float: left;}
+
+#nav_menu ul ul {display: none;
+                 position: absolute;
+                 top: 100%;}
+
+#nav_menu ul ul li {float: none;}
+
+#nav_menu ul li:hover > ul {display: block;}
+
+#nav_menu > ul::after {content: "";
+                       clear: both;
+                       display: block;}
+
+#nav_menu ul {margin: 0px;
+              padding: 0px;}
+
+#nav_menu ul li a {text-align: center;
+                   display: block;
+                   width: 150px;
+                   padding: .7em 0em;
+                   background-color: #ff4654;
+                   font-weight: bold;
+                   color: white;}
+
+#nav_menu ul li a.current {color: black;}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {background-color: #141616;}
+
+
+#account a {text-decoration: none}
+
+#account ul {list-style: none;
+	 		 position: relative;}
+
+#account ul li {float: left;}
+
+#account ul ul {display: none;
+				position: absolute;
+				 top: 100%;}
+
+#account ul ul li {float: none;}
+#account ul li:hover > ul {display: block;}
+
+
+#account > ul::after {content: "";
+					   clear: both;
+					   display: block;}
+
+#account ul {margin: 0px;
+			 padding: 0px;}
+
+#account ul li a {text-align: center;
+				  display: block;
+				  width: 150px;
+				  padding: .7em 0em;
+				  background-color: #ff4654;
+    			  font-weight: bold;
+				  color: white;}
+
+#account ul li a.current {color: black;}
+
+#account ul li a:hover, #nav_menu ul li a:focus {background-color: #141616;}
+
+
+
+
+footer a:link {text-decoration: none;}
+
+footer a:visited {text-decoration: none;}
+
+footer a:hover {text-decoration: underline;}
+
+footer a:active {text-decoration: underline;}
+
+
+
+
+.main-header {height: 55vh;
+              padding: 2rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              text-align: center;}
+
+.main-header h1 {font-size: 4rem;
+                 margin-bottom: 2rem;
+                 line-height: 1.2;}
+
+.main-header h1 span {color: #b50d10;}
+
+.main-header p {font-size: 2rem;}
+
+img {width: 100%;}
+
+.card {display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-gap: 2rem;
+       background: #3f3f3f;
+       margin-bottom: 5%;
+       margin-left: 4.5%;
+       margin-right: 4.5%;
+       border: solid 3px #ff4654}
+
+.card h3 {margin-bottom: 2rem;
+          padding: 0px;
+          text-align: center}
+
+.card img {height: 500px}
+
+.card > div {padding: 2rem;}
+
+.card:nth-child(even) img {order: 2;}
+
+.btn {display: inline-block;
+      text-align: center;
+      background: #000;
+      color: #fff;
+      padding: 0.8em 1.2em;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1em;
+      margin: 2vh 16.5vw;}
+
+.btn:hover {opacity: 0.8;}
+
+
+
+
+
+
+@media only screen and (max-width: 768px)
+{
+#nav_menu {display: none;}
+    
+#mobile_menu {display: block;}
+    
+#mobile_menu a {text-decoration: none}
+
+#mobile_menu ul {list-style: none;
+               position: relative;}
+
+#mobile_menu ul li {float: left;}
+
+#mobile_menu ul ul {display: none;
+                 position: absolute;
+                 top: 100%;}
+
+#mobile_menu ul ul li {float: none;}
+
+#mobile_menu ul li:hover > ul {display: block;}
+
+#mobile_menu > ul::after {content: "";
+                       clear: both;
+                       display: block;}
+
+#mobile_menu ul {margin: 0px;
+              padding: 0px;}
+
+#mobile_menu ul li a {text-align: center;
+                   display: block;
+                   width: 150px;
+                   padding: .7em 0em;
+                   background-color: #ff4654;
+                   font-weight: bold;
+                   color: white;}
+
+#mobile_menu ul li a.current {color: black;}
+
+#mobile_menu ul li a:hover, #mobile_menu ul li a:focus {background-color: #141616;}
+    
+
+    
+
+#account a {text-decoration: none;}
+
+#account ul {list-style: none;
+	 		 position: relative;}
+
+#account ul li {float: left;}
+
+#account ul ul {display: none;
+				position: absolute;
+				top: 100%;}
+
+#account ul ul li {float: none;}
+#account ul li:hover > ul {display: block;}
+
+
+#account > ul::after {content: "";
+					   clear: both;
+					   display: block;}
+
+#account ul {margin: 0px;
+			 padding: 0px;}
+
+#account ul li a {text-align: center;
+				  display: block;
+				  width: 100px;
+				  padding: .7em 0em;
+				  background-color: #ff4654;
+    			  font-weight: bold;
+				  color: white;}
+
+#account ul li a.current {color: black;}
+
+#account ul li a:hover, #nav_menu ul li a:focus {background-color: #141616;}
+    
+.logo {background-color: #141616;
+       flex: 1;
+       display: flex;
+       justify-content: center;}
+    
+.logo img {width: 100px;
+           height: 100%;
+           padding-top: 50px;}
+    
+.navbar2 {font-family: "Bebas Neue", sans-serif;
+          font-size: 18px;
+          letter-spacing: 1.5px;    
+          background-color: #141616;
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          padding-top: 70px;}
+    
+.card {display: block;}
+    
+.card img {height: 300px;}
+
+footer {font-size: 12px;}
+    
+}
+

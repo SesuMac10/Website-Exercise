@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Valorant</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../css/signup.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+<div class="container">
+    
+    
+	<header>
+        <div class="logo">
+        <img src="../images/valorantlogo1.png">
+        </div>    
+        
+        <div class="navbar1">
+        <nav id="mobile_menu"></nav>
+		  <nav id="nav_menu">
+  	      <ul>
+    	       <li><a href="../index.html">Home</a></li>
+    	       <li><a href="../html/news.html">News</a></li>
+    	       <li><a href="../html/UnderConstruction.html">Character</a></li>
+    	       <li><a href="../html/UnderConstruction.html">Maps</a></li>
+    	   </ul>
+           </nav>
+        </div>
+        
+        <div class="navbar2">
+           <nav id="account">
+    	   <ul>
+    	       <li><a href="#My Account" id="account"  class="current">My Account</a>
+    	           <ul>
+    	               <li><a href="#My Account">Account</a></li>
+    	               <li><a href="../html/signup.html" class="current">Sign Up</a></li>
+    	               <li><a href="../html/login.html">Login</a></li>
+    	           </ul>
+    	       </li>
+    	   </ul>
+    	   </nav>
+        </div>
+	</header>
+    
+    <div class="content">
+    <main>
+    <form action="#" method="post">
+      <h3>Sign Up</h3>
+        
+      <div class="formcontainer">
+      <hr/>
+        <div class="formcontainer2">
+            <label for="username"><strong>Username</strong></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="username"><strong>Email</strong></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+            <label for="psw"><strong>Password</strong></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw"><strong>Confirm Password</strong></label>
+                <input type="password" placeholder="Confirm Password" name="psw" required>
+        </div>
+          
+            <button type="submit">Create</button>
+          
+        <div class="formcontainer2">
+            <p>Already have an Account? <a href="../html/login.html">Log In</a></p>
+        </div>
+          
+        </div>
+        </form>
+    </main>
+    </div>
+    
+    <div class="footer">
+    <footer>		
+        <a href="../index.html">Home</a>
+        <a href="../html/UnderConstruction.html">About</a>
+        <a href="../html/UnderConstruction.html">Services</a>
+        <a href="../html/UnderConstruction.html" >Contact</a>
+    </footer>
+    </div>
+    
+</div>
+</body>
+</html>

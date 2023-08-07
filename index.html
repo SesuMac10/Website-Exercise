@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Valorant</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+<div class="container">
+    
+    
+	<header>
+        <div class="logo">
+            <img src="images/valorantlogo1.png">
+        </div>    
+    
+        <div class="navbar1">
+        <nav id="mobile_menu"></nav>
+		  <nav id="nav_menu">
+  	      <ul>
+    	       <li><a href="index.html" class="current">Home</a></li>
+    	       <li><a href="html/news.html">News</a></li>
+    	       <li><a href="html/UnderConstruction.html">Character</a></li>
+    	       <li><a href="html/UnderConstruction.html">Maps</a></li>
+    	   </ul>
+           </nav>
+        </div>
+        
+        <div class="navbar2">
+           <nav id="account">
+    	   <ul>
+    	       <li><a href="#My Account" id="account">My Account</a>
+    	           <ul>
+    	               <li><a href="#My Account">Account</a></li>
+    	               <li><a href="./html/signup.html">Sign Up</a></li>
+    	               <li><a href="./html/login.html">Login</a></li>
+    	           </ul>
+    	       </li>
+    	   </ul>
+    	   </nav>
+        </div>
+	</header>
+   
+    
+    
+    <div class="content">
+	<main>
+    
+    <div id="slide">
+		<img src="images/valorantlogo2.png" id="valorantlogo">
+
+	    <h3>What's new:</h3>
+        
+            <div class="img-slider">
+                
+      <a href="./html/article1.html">
+      <div class="slide active">
+        <img src="images/article1.jpg" alt="" style="opacity: 80%">
+        <div class="info">
+          <h2>Valorant is coming to mobile</h2>
+
+        </div>
+      </div>
+      </a>
+      
+      <a href="./html/article2.html">
+      <div class="slide">
+        <img src="images/article2.jpg" alt="" style="opacity: 80%">
+        <div class="info">
+          <h2>VCT Comes to Berlin</h2>
+        </div>
+      </div>
+      </a> 
+      
+      <a href="./html/article3.html">
+      <div class="slide">
+        <img src="images/article3.jpg" alt="" style="opacity: 80%">
+        <div class="info">
+          <h2>Ranking in Valorant</h2>
+        </div>
+      </div>
+      </a> 
+      
+      <a href="./html/article4.html">            
+      <div class="slide">
+        <img src="images/article4.jpg" alt="" style="opacity: 80%">
+        <div class="info">
+          <h2>Smurfing in Valorant</h2>
+        </div>
+      </div>
+      </a>
+      
+      <a href="./html/article5.html">          
+      <div class="slide">
+        <img src="images/article5.jpg" alt="" style="opacity: 80%">
+        <div class="info">
+          <h2>Valorant in 2021</h2>
+        </div>
+      </div>
+      </a>
+          
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+    </div>
+    
+        
+        
+        
+        <section class="card" data-aos="fade-up">
+        <img src="images/character%201.jpg"/>   
+        <div>
+          <h3>New Character Chamber</h3>
+          <p>Chamber joins as a new agent to Valaront int the new Act. Chamber, a sentinel that “focuses on mechanical outplays” with an “additional focus on gunplay” for “an extra flourish,” has an arsenal of weapons at his disposal. Far from the traditional sentinel, the agent aligns more with a duelist. 
+          </p>
+        </div>
+        </section>
+
+        
+	</main>
+    </div>
+    
+    
+    <div class="footer">
+	<footer>		
+        <a href="index.html">Home</a>
+        <a href="html/UnderConstruction.html">About</a>
+        <a href="html/UnderConstruction.html">Services</a>
+        <a href="html/UnderConstruction.html" >Contact</a>
+	</footer>
+    </div>
+    
+    
+</div>
+    
+    <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000 // values from 0 to 3000, with step 50ms
+        });
+    </script>
+    
+</body>
+</html>
